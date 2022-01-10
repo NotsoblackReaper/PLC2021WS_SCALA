@@ -22,5 +22,8 @@ object MainApp {
     println("DESC:")
     for(s:StoreItem<-db.sortByValueDesc())
       println(s.value)
+    println("Unsorted:")
+    for(s:StoreItem<-db.storedItems)
+      println(s.value)
   }
 }
